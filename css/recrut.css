@@ -1,0 +1,231 @@
+.recrut {
+}
+.recrut__container {
+}
+._container {
+}
+.recrut__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.recrut__card {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 305px;
+  gap: 16px;
+}
+.recrut__image {
+  width: 100%;
+}
+.recrut__image img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 12px;
+}
+.recrut__textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.recrut__title {
+  font-family: 'Open Sauce Sans';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 95%;
+  letter-spacing: -5%;
+}
+.recrut__text {
+  font-family: 'Open Sauce Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  max-width: 270px;
+  letter-spacing: 0%;
+  color: #666666;
+}
+.recrut__aside {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+.recrut__location {
+  font-family: 'Open Sauce Sans';
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.recrut__salary {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  font-family: 'Open Sauce Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.recrut__button {
+  width: 100%;
+  gap: 10px;
+  border-radius: 100px;
+  border-width: 1px;
+  color: #fff;
+  text-align: center;
+  padding: 8px 15px;
+  background-color: #d40a12;
+  font-family: 'Open Sauce Sans';
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: all 0.5s ease 0s;
+}
+.recrut__button:hover {
+  background-color: #3c3c43;
+}
+
+.recrutOpened {
+}
+.recrutOpened__container {
+}
+._container {
+}
+.recrutOpened__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.recrutOpened__image {
+}
+.recrutOpened__row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+.recrutOpened__textColumn {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.recrutOpened__textRow {
+  display: flex;
+  gap: 50px;
+}
+.recrutOpened__listColumn {
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* ---------------------------------------- */
+
+.recrutOpened__form-wrapper {
+  display: none;
+
+  background-color: #ffffff;
+  padding: 37px 43px;
+  max-width: 587px;
+  border: 1px solid #dde2e5;
+  border-radius: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.recrutOpened__form-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #2b2f32;
+  margin-bottom: 40px;
+}
+
+.recrutOpened__form {
+}
+
+.recrutOpened__form-input {
+  font-weight: 400;
+  font-size: 16px;
+  color: #abafb1;
+
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(239, 241, 249, 0.6);
+  margin-bottom: 24px;
+}
+
+.recrutOpened__form-position-title {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5e6366;
+  margin-bottom: 8px;
+}
+
+.recrutOpened__form-button {
+  border-radius: 12px;
+  padding: 17px 16px;
+  background: #d40a12;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.recrutOpened__form-file {
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 54px;
+  color: #151515;
+}
+
+.recrutOpened__form-file:hover {
+  color: #2c2c2c;
+}
+
+.recrutOpened__form-file-text {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 133%;
+  text-align: right;
+}
+
+.form-active {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
