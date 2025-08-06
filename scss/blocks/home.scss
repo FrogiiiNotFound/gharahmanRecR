@@ -1,0 +1,137 @@
+.home {
+  padding: 120px 0px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 144px;
+    line-height: 92%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #ededed;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__addition-text {
+    max-width: 240px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 92%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #b81726;
+  }
+
+  &__button {
+    cursor: pointer;
+    position: relative;
+    min-width: 336px;
+    color: #ededed;
+
+    &:active {
+      color: #b81726 !important;
+    }
+  }
+
+  &__button-text {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 92%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+  }
+
+  &__button-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+/* ============================================================================== */
+
+@media (min-width: 548px) {
+  .home {
+    &__title {
+      display: inline;
+    }
+
+    &__title-small {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 548px) {
+  .home {
+    padding: 30px 0px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__title-small {
+      display: inline;
+
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 92%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #ededed;
+      opacity: 0.9;
+      margin-bottom: 39px;
+    }
+
+    &__addition-text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 92%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #b81726;
+      max-width: 135px;
+      margin-bottom: 15px;
+    }
+
+    &__button-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 92%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      text-align: right;
+      color: #ededed;
+      max-width: 158px;
+      margin-top: 13px;
+    }
+
+    &__button {
+      display: flex;
+      gap: 3px;
+      justify-content: end;
+    }
+
+    &__button-img {
+      position: relative;
+    }
+
+    &__button-image {
+      width: 40px;
+    }
+  }
+}

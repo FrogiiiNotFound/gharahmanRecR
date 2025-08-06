@@ -1,0 +1,14 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header.scss';
+@import './blocks/home.scss';
+@import './blocks/reviews.scss';
+@import './blocks/plan.scss';

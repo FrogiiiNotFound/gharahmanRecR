@@ -1,0 +1,155 @@
+.reviews {
+  padding: 120px 0px 523px 0px;
+
+  &__container {
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 92%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #ededed;
+    margin-bottom: 63px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 189px;
+  }
+
+  &__review {
+    position: relative;
+    max-width: 447px;
+  }
+
+  &__review-template {
+  }
+
+  &__review-text {
+    max-width: 345px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 92%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #b81726;
+  }
+
+  &__review-centered {
+    margin-top: 86px;
+  }
+}
+.video {
+  &__body {
+  }
+}
+.play-button {
+}
+
+.video__body {
+  position: relative; /* Important for positioning the button */
+}
+
+#playPauseBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1; /* Ensure button is on top of video */
+  background: transparent;
+}
+
+.play-button img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* ============================================================================== */
+
+@media (min-width: 1060px) {
+  .reviews {
+    &__title {
+      display: inline;
+    }
+
+    &__title2 {
+      display: none;
+    }
+
+    &__row {
+      display: flex;
+      margin-top: 63px;
+    }
+  }
+
+  .info__slider {
+    display: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .reviews {
+    padding: 120px 0px;
+
+    &__title {
+      display: none !important;
+    }
+
+    &__title2 {
+      display: inline;
+
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 92%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      text-align: justify;
+      color: #ededed;
+    }
+
+    &__row {
+      display: none;
+    }
+
+    &__review {
+      width: 179px;
+    }
+
+    &__review-video {
+      width: 179px;
+    }
+
+    &__review-template img {
+      width: 179px;
+    }
+
+    &__review-text {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 92%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #b81726;
+    }
+  }
+
+  .info__slider {
+    display: block;
+    margin-top: 62px;
+  }
+}
